@@ -43,3 +43,32 @@
 # stars(1) -> stars(symbols -1)
 # stars(2) -> stars(symbols -1)
 # stars(3) -> stars(symbols -1) -> ***
+
+# task 3
+
+# def sum(list, num_one, num_two):
+#     if num_one >= len(list):
+#         return 0
+#     else:
+#         return list[num_one] + sum(list, num_one + 1, num_two)
+#
+# import random
+#
+# random_list = []
+#
+# for i in range(9):
+#     random_list.append(random.randint(1, 100))
+#
+# sum_num_one = 1
+# sum_num_two = 8
+#
+# result = sum(random_list, sum_num_one, sum_num_two)
+# print(random_list)
+# print(f"Sum of numbers from {sum_num_one} before {sum_num_two} = {result}")
+
+# numbers = [1, 2, 3, 4, 5], num1 = 1, num2 = 3:
+# sum(numbers, num1, num2) -> 1 >= numbers -> sum([], 1, 3)
+# numbers[1] + sum(numbers, num1, num2) -> 1 >= numbers -> sum([], 2, 3)
+# 2 + numbers[2] + sum(numbers, num1, num2) -> 1 >= numbers -> sum([], 3, 3)
+# 2 + 3 + numbers[3] + sum(numbers, num1, num2) -> 1 >= numbers -> sum([], 4, 3) -> 9
+
